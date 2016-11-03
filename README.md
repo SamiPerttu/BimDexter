@@ -26,21 +26,27 @@ Compression times here are CPU only.
 
 ### `BimDexter.exe` Compressed Image
 
-RMS error: 4.87
-compression time: 0.593 seconds
-
+```
+RMS error         : 4.87
+max absolute error: 81
+compression time  : 0.593 seconds
+```
 ![](https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-BimDexter.png "BimDexter compressed image")
 
 ### `nvcompress.exe` Compressed Image
 
-RMS error: 4.74
-compression time: 0.836 seconds
-
+```
+RMS error         : 4.74
+max absolute error: 81
+time taken        : 0.836 seconds
+```
 ![](https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-nvcompress.png "nvcompress.exe compressed image")
 
 ### `nvcompress.exe -fast` Compressed Image
 
-RMS error: 5.05
-compression time: 0.040 seconds
-
+```
+RMS error         : 5.05
+max absolute error: 109
+time taken        : 0.040 seconds
+```
 ![](https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-nvcompress-fast.png "nvcompress.exe -fast compressed image")
