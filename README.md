@@ -16,16 +16,16 @@ with heuristic gradient descent. The meat of the algorithm is in `BimDexter/Pixe
 
 ## Example
 
-!(https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-original.png "original image")
+![](https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-original.png "original image")
 
-!(https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-BimDexter.png "BimDexter compressed image")
+![](https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-BimDexter.png "BimDexter compressed image")
 RMS error: 4.87
 compression time: 0.593 seconds
 
-!(https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-nvcompress.png "nvcompress.exe compressed image")
+![](https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-nvcompress.png "nvcompress.exe compressed image")
 RMS error: 4.74
 compression time: 0.836 seconds
 
-!(https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-nvcompress-fast.png "nvcompress.exe -fast compressed image")
+![](https://cdn.rawgit.com/SamiPerttu/BimDexter/master/examples/test-nvcompress-fast.png "nvcompress.exe -fast compressed image")
 RMS error: 5.05
 compression time: 0.040 seconds
