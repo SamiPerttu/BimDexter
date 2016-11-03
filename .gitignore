@@ -2,3 +2,5 @@ Debug
 Release
 *.db
 *.sdf
+*.user
+.vs
