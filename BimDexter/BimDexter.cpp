@@ -5,11 +5,13 @@
 #include <iostream>
 #include <locale>
 #include <exception>
+#include <chrono>
 
 #include "Pixmap.h"
 #include "PixelBlock.h"
 
 using namespace std;
+using namespace std::chrono;
 
 
 void usage()
@@ -100,10 +102,13 @@ int main(int argc, char** argv)
             infile.close();
             outfile.open(filename[1], ios::binary);
             if (!outfile.is_open()) throw runtime_error("Cannot open output file.");
+            double time0 = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
             pixmap.export_dxt1(outfile, verbose);
+            double time1 = duration_cast<milliseconds>(system_clock::now().time_since_epoch()).count();
+            if (verbose) cerr << "Time taken: " << (time1 - time0) * 0.001 << " seconds.\n";
             outfile.close();
         } catch(runtime_error e) {
-            cerr << "Error: " << e.what();
+            cerr << "Error: " << e.what() << "\n";
             return 1;
         }
     } else {
@@ -117,7 +122,7 @@ int main(int argc, char** argv)
             pixmap.export_bmp(outfile, verbose);
             outfile.close();
         } catch(runtime_error e) {
-            cerr << "Error: " << e.what();
+            cerr << "Error: " << e.what() << "\n";
             return 1;
         }
     }
